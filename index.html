@@ -23,26 +23,25 @@
 
         
 
-    <section class="navbar-start px-6 ">
+    <section class="navbar-brand">
         <img src="./Ressources/logoEcoEats.jpg" width="100" height="100" alt="logoEcoEats">
-                
+        <a class="navbar-burger is-active" role="button" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>   
     </section>
-                
-    <section class="navbar-brand has-text-centered px-6">
-                
+                <section id="navbarBasic" class="navbar-menu">
+    <section class="navbar-start">
+        
         <a class="navbar-item" href="#apropos">A Propos</a>
         <a class="navbar-item" href="#menu">Menus</a>
         <a class="navbar-item" href="#comment">Comment ça marche?</a>
         <a class="navbar-item" href="#contact">Contactez-nous</a>
-        <a class="navbar-burger is-active" role="button" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
+        
     </section>
-                
-    <section class="navbar-end px-1">
+    <section class="navbar-end">
                         
         
         <article class="buttons">
@@ -51,8 +50,37 @@
         </article>
                 
     </section>
-                
+</section>
 </nav>
+
+
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Add a click event on each of them
+$navbarBurgers.forEach( el => {
+  el.addEventListener('click', () => {
+
+    // Get the target from the "data-target" attribute
+    const target = el.dataset.target;
+    const $target = document.getElementById(target);
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    el.classList.toggle('is-active');
+    $target.classList.toggle('is-active');
+
+  });
+});
+
+});
+                </script>
+   
+                
+
 
 </header>
 
