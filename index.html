@@ -16,27 +16,39 @@
 
 <header>
            
-<nav class="navbar has-shadow is-black">
+<nav class="navbar has-shadow is-black ">
 
-        <img src="./Ressources/logoEcoEats.jpg" width="100" height="100" alt=""logoEcoEats/>
+        
 
-    <section class="navbar-start px-6">
-                
-    <!-- <a class="navbar-item" href="./Index.html">Acceuil</a> -->
+    <section class="navbar-start px-6 ">
+        <img src="./Ressources/logoEcoEats.jpg" width="100" height="100" alt="logoEcoEats"/>
+    <a class="navbar-item is-hidden" href="./Index.html">Acceuil</a> 
+     <a class="navbar-item is-hidden" href="./Index.html">Acceuil</a>
+     
                 
     </section>
                 
-    <section class="navbar-brand has-text-centered py-5">
+    <section class="navbar-brand has-text-centered px-6">
                 
         <a class="navbar-item" href="#apropos">A Propos</a>
         <a class="navbar-item" href="#menu">Menus</a>
         <a class="navbar-item" href="#comment">Comment ça marche?</a>
-                
+        <a class="navbar-item" href="#contact">Contactez-nous</a>
+        <a class="navbar-burger is-active" role="button" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
     </section>
                 
-    <section class="navbar-end px-6">
+    <section class="navbar-end px-1">
                         
-        <a class="navbar-item" href="Contact.html">Contactez-nous</a>
+        
+        <article class="buttons">
+            <button class="button is-success is-dark" type="button">Sign Up</button>
+            <button class="button is-link is-light" type="button">Sign In</button>
+          </article>
                 
     </section>
                 
@@ -67,7 +79,7 @@
             <ul class="is-inline-block has-text-left box has-background-black-ter">
 
                 <li class="py-2"><i class="has-text-white is-underlined">- Variété :</i></li>
-                <li class="py-2"><i class="has-text-white"> Des menus diversifiés qui s’adaptent à tous les goûts et régimes alimentaires.</i></li>
+                <li class="py-2"><i class="has-text-white"> Des menus sectionersifiés qui s’adaptent à tous les goûts et régimes alimentaires.</i></li>
 
                 <li class="py-2"><i class="has-text-white is-underlined">- Commodité :</i></li>
                 <li class="py-2"><i class="has-text-white"> Commandez facilement en ligne et recevez vos repas frais à domicile.</i></li>
@@ -124,9 +136,9 @@
 
         <h2 class="has-text-centered is-underlined is-capitalized py-5 is-size-4 has-text-weight-bold">Nos Menus :</h2><br>
 
-    <section class="columns box has-background-black-ter">
+    <section class="columns level is-align-items-flex-start">
 
-    <section class="column is-half">
+    <section class="column box is-half has-background-black-ter">
 
             <h4 class="py-5 is-capitalized is-size-5 has-text-weight-medium has-text-danger is-underlined">Fraîcheur d’Été :</h4>
 
@@ -178,7 +190,7 @@
 
 
 
-    <section class="column is-half">
+    <section class="column box is-half has-background-black-ter">
 
         <h4 class="py-5 is-capitalized is-size-5 has-text-weight-medium has-text-danger is-underlined">Saveurs d’Automne :</h4>
 
@@ -230,9 +242,9 @@
 
     </section>
 
-    <section class="columns box has-background-black-ter">
+    <section class="columns level is-align-items-flex-start">
 
-        <section class="column is-half">
+        <section class="column box is-half  has-background-black-ter">
     
                 <h4 class="py-5 is-capitalized is-size-5 has-text-weight-medium has-text-danger is-underlined">Évasion Asiatique :</h4>
     
@@ -284,7 +296,7 @@
     
     
     
-        <section class="column is-half">
+        <section class="column box is-half  has-background-black-ter">
     
             <h4 class="py-5 is-capitalized is-size-5 has-text-weight-medium has-text-danger is-underlined">Délices Méditerranéens :</h4>
     
@@ -334,20 +346,76 @@
     
     </section>
     
-        </section>
+    </section>
     
-
-
     </section>
 
 
+    <section id="comment" class="container">
 
+        <h2 class="has-text-centered is-underlined is-capitalized py-5 is-size-4 has-text-weight-bold">Comment ça marche ?</h2><br>
 
+    <section class="columns has-text-centered box">
 
-    <section id="comment">
+    <section class="column  is-one-third">
 
+            <h3 class="py-2 is-capitalized is-size-5 has-text-weight-medium	has-text-danger is-underlined">Première étape :</h3>
+            
+            <ul class="is-inline-block has-text-centered box has-background-black-ter">
 
+                <li class="py-2"><i class="has-text-white is-underlined">Inscription et Connexion :</i></li>
 
+                <li class="py-1"><p class="has-text-white">Créez un compte sur notre site web ou notre application mobile en fournissant vos informations de base. Connectez-vous à votre compte pour accéder à notre menu et passer des commandes.</p></li>
+
+                <li class="py-2"><i class="has-text-white is-underlined">Sélection des Plats et Personnalisation :</i></li>
+
+                <li class="py-1"><p class="has-text-white">Parcourez notre menu varié de repas biologiques. Ajoutez les plats que vous souhaitez commander à votre panier. Personnalisez vos plats selon vos préférences alimentaires. Par exemple, vous pouvez demander des options sans gluten, végétariennes ou véganes. Ajoutez des notes spéciales pour nos chefs si vous avez des demandes particulières.</p></li>
+
+                </ul>
+
+    </section>
+
+    <section class="column  is-one-third">
+
+            <h3 class="py-2 is-capitalized is-size-5 has-text-weight-medium	has-text-danger is-underlined">Deuxième étape :</h3>
+            
+            <ul class="is-inline-block has-text-centered box has-background-black-ter">
+
+                <li class="py-2"><i class="has-text-white is-underlined">Validation de la Commande :</i></li>
+
+                <li class="py-1"><p class="has-text-white">Vérifiez les articles dans votre panier. Sélectionnez votre adresse de livraison et choisissez un créneau horaire qui vous convient.
+                    </p></li>
+
+                <li class="py-5"><i class="has-text-white is-underlined">Paiement :</i></li>
+
+                <li class="py-1"><p class="has-text-white">Procédez au paiement en utilisant l’une de nos options sécurisées (carte de crédit, PayPal, etc.). Vous recevrez une confirmation de commande par Email.</p></li>
+                </ul>
+
+    </section>
+
+    <section class="column  is-one-third">
+
+            <h3 class="py-2 is-capitalized is-size-5 has-text-weight-medium	has-text-danger is-underlined">Troisième étape :</h3>
+            
+            <ul class="is-inline-block has-text-centered box has-background-black-ter">
+
+                <li class="py-2"><i class="has-text-white is-underlined">Préparation et Livraison :</i></li>
+
+                <li class="py-1"><p class="has-text-white">Nos chefs préparent vos repas avec des ingrédients frais et biologiques. Votre commande est emballée dans des contenants écologiques et livrée à votre porte dans le créneau horaire choisi.</p></li>
+
+                <li class="py-2"><i class="has-text-white is-underlined">Dégustation :</i></li>
+
+                <li class="py-1"><p class="has-text-white">Profitez de vos repas sains et délicieux !
+                N’hésitez pas à laisser un avis ou des commentaires pour nous aider à améliorer notre service. Si vous avez des questions ou besoin d’aide à tout moment, notre service client est là pour vous assister.</p></li>
+            </ul>
+
+    </section>
+          
+    </section>
+
+    </section>
+
+    <section id="contact" class="container">
     </section>
 
 </main>
